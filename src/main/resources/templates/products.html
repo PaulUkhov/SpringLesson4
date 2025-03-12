@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Простая страница</title>
+</head>
+<body>
+<h1>Hello World!</h1>
+<h2>Список продуктов:</h2>
+<table border="1">
+    <tr>
+        <th>PRODUCT NAME</th>
+        <th>PRODUCT PRICE</th>
+    </tr>
+    <tr th:each="product : ${products}">
+        <td th:text="${product.name}"></td>
+        <td th:text="${product.price}"></td>
+    </tr>
+</table>
+
+<h2>Добавить продукт</h2>
+<form action="/products" method="post">
+    Name: <label>
+    <input type="text" name="name">
+</label><br/>
+    Price: <label>
+    <input type="number" step="any" name="price">
+</label><br/>
+    <button type="submit">Отправить продукт в корзину</button>
+</form>
+</body>
+</html>
