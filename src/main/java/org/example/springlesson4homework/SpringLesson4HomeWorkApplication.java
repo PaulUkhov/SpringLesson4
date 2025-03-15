@@ -19,7 +19,16 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 // которая собирает информацию от пользователя.
 //
 //Все необходимые примеры кода для этого задания мы разбирали на семинаре.
-
+//Задание со звездочкой:
+//        Проект домашнего задания для 2 семинара (CRUD приложение USER SERVICE) переписать:
+//        1. Использовать библиотеку Lomboc:
+//        a) @Data - для полей классов
+//        b) @AllArgsConstructor - для классов с конструкторами
+//        c) @Log - логировать работу всех контроллеров
+//2. Использовать configuration-processor для работы с настройками приложения:
+//        a) Создать объект инкапсулирующий шаблоны запросов к базе данных H2
+//        b) Использовать аннотации @ConfigurationProperties и @ConfigurationPropertiesScan для заполнения полей этого класса
+//        с) Вынести все SQL шаблоны в настройки приложения.
 @ConfigurationPropertiesScan
 @SpringBootApplication
 public class SpringLesson4HomeWorkApplication {
