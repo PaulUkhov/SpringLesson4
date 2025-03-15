@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@AllArgsConstructor
+
 @Service
 public class ServiceProduct {
     private List<Product> products;
