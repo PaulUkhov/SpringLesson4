@@ -2,6 +2,8 @@ package org.example.springlesson4homework;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 //Базовое задание:
 //        1. Создание базового веб-приложения Spring MVC
 //Начните с создания простого веб-приложения с использованием Spring MVC. Это может быть простой сайт,
@@ -18,7 +20,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //
 //Все необходимые примеры кода для этого задания мы разбирали на семинаре.
 
-
+@ConfigurationPropertiesScan
 @SpringBootApplication
 public class SpringLesson4HomeWorkApplication {
 
